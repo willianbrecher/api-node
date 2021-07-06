@@ -6,5 +6,6 @@ export const AuthenticationRoutes = [
     route: "/authentication",
     controller: AuthenticationController,
     action: "authentication",
+    middlewares: []
   },
 ];

@@ -18,6 +18,7 @@ createConnection()
       entityRoute.forEach((route) => {
         (app as any)[route.method](
           route.route,
+          route.middlewares,
           (req: Request, res: Response, next: Function) => {
             const result = new (route.controller as any)()[route.action](
               req,
@@ -39,6 +40,6 @@ createConnection()
     });
 
     // start express server
-    app.listen(3000, await initialTask(), console.log("Server has started on port 3000"));
+    app.listen(3001, await initialTask(), console.log("Server has started on port 3001"));
   })
   .catch((error) => console.log(error));

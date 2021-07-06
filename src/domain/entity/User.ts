@@ -10,6 +10,6 @@ export class User extends PersistentEntity {
   @Column()
   email: string;
 
-  @Column({ select: false })
+  @Column()
   password: string;
 }
