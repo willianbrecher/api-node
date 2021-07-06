@@ -1,4 +1,4 @@
-import { getCustomRepository, getRepository } from "typeorm";
+import { getCustomRepository } from "typeorm";
 import { NextFunction, Request, Response } from "express";
 import { User } from "../domain/entity/User";
 import { UserRepository } from "../domain/repositories/UserRepository";

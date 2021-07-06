@@ -12,6 +12,7 @@
       "bcrypt": "^5.0.1",
       "body-parser": "^1.18.1",
       "express": "^4.15.4",
+      "jsonwebtoken": "^8.5.1",
       "pg": "^8.4.0",
       "reflect-metadata": "^0.1.10",
       "typeorm": "^0.2.34"

@@ -30,5 +30,5 @@ export const UserRoutes = [
     route: "/api/users/:id",
     controller: UserController,
     action: "remove",
-  },
+  }
 ];
